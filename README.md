@@ -7,18 +7,20 @@ El objetivo de esta segunda práctica de la asignatura de 4to, Creación de Inte
 
 ## Controles
 Los controles de la aplicación se mostrarán en todo momento por pantalla para facilitar su uso al usuario:
-- **Teclas W A S D:** Desplaza la nave respecto a los ejes X e Y (sube/baja, izquierda/derecha).
-- **Teclas Q E:** Desplaza la nave respecto al eje Z (se acerca/aleja al sistema).
-- **Tecla C:** Cambia la perspectiva.
-- **Teclas N M:** Al presionar estas teclas podremos rotar nuestro sistema planetario para observar el resultado en su completitud.
-- **Tecla R:** Resetea la posición de la nave y la rotación del sistema planetario.
+- **Teclas A D:** Desplaza la cámara hacia la izquierda o derecha.
+- **Teclas Q E:** Desplaza la la cámara hacia delante o atrás (se acerca/aleja la escena).
+- **Tecla L:** Activa las luces de la escena.
+- **Tecla R:** Resetea la posición de la cámara.
 - **Tecla ESC:** Cerrar la aplicación.
 
 ## Descripción
 Aprovechando que el lenguaje de programación que utiliza el IDE Processing por defecto está basado en Java, podemos desarrollar nuestro código utilizando el paradigma de programación de "Programación Orientada a Objetos". Así pues, hemos descrito tres clases de Java:
 - **IluminatedScene:** clase principal.
+- **Ball:** clase que representa al objeto/resultado de crear la esfera y sus efectos.
+- **BeachBall:** clase que representa al objeto/resultado de crear la pelota y sus efectos.
+- **Box:** clase que representa al objeto/resultado de crear el cubo y sus efectos.
 
-Para la realización de este proyecto se ha reutilizado el código de *PlanetarySystem*. Así pues, se han aplicado mejoras funcionales y extras al mismo como, por ejemplo, una pantalla de inicio dinámica o un efecto de campo de estrellas o *starfield* que transmite la sensación al usuario de velocidad, esto es, que se desplaza en el sistema.
+Con el objetivo de alcanzar un cierto nivel de interacción con el usuario, la aplicación cuenta con una "funcionalidad oculta", no es difícil de encontrar, lo que, hay que ser observador...¿Serás capaz de encontrar el secreto que esconde la escena?
 
 ## Explicación
 ### Clase IluminatedScene
