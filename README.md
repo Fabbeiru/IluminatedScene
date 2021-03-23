@@ -39,7 +39,6 @@ void setup() {
   ballEffect = false;
   boxEffect = false;
   beachBallEffect = false;
-  ang = 0;
 }
 
 void draw() {
