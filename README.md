@@ -34,3 +34,6 @@ Para la realización de este sistema planetario en 3D, se han consultado y/o uti
 
 Por otro lado, las librerías empleadas fueron:
 * <a href="https://github.com/extrapixel/gif-animation">GifAnimation</a>
+
+Modelo 3D de las pelotas:
+* "<a href="https://skfb.ly/6SJNp">Balls</a>" by <a href="https://sketchfab.com/krolzuzannapl">SusanKing</a> from Sketchfab.
