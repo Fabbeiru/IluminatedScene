@@ -24,6 +24,43 @@ Con el objetivo de alcanzar un cierto nivel de interacción con el usuario, la a
 
 ## Explicación
 ### Clase IluminatedScene
+Esta es la clase principal de la aplicación, la cual gestiona la información mostrada por pantalla al usuario (interfaz gráfica), esto es, el desarrollo de los métodos setup() y draw().
+```java
+void setup() {
+  size(1200, 800, P3D);
+  smooth(8);
+  ball = new Ball();
+  box = new Box();
+  beachBall = new BeachBall();
+  initCameraValues();
+  menu = true;
+  lightSwitch = false;
+  showEffect = false;
+  ballEffect = false;
+  boxEffect = false;
+  beachBallEffect = false;
+  ang = 0;
+}
+
+void draw() {
+  if (menu) menu();
+  else {
+    if (ballEffect) ball.effect();
+    if (boxEffect) box.effect();
+    if (beachBallEffect) beachBall.effect();
+    if (!showEffect) {
+      background(0);
+      translate(width/2, height/2);
+      camera(viewX, viewY, viewZ, ball.x, 0.0, ball.z*10000, 0.0, 1.0, 0.0);
+      viewControls();
+      showHelp();
+      ball.display();
+      box.display();
+      beachBall.display();
+    }
+  }
+}
+```
 
 ## Descarga y prueba
 Para poder probar correctamente el código, descargar los ficheros (el .zip del repositorio) y en la carpeta llamada IluminatedScene se encuentran los archivos de la aplicación listos para probar y ejecutar. El archivo "README.md" y aquellos fuera de la carpeta del proyecto (IluminatedScene), son opcionales, si se descargan no deberían influir en el funcionamiento del código ya que, son usados para darle formato a la presentación y explicación del repositorio en la plataforma GitHub.
