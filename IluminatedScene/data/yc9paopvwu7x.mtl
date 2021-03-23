@@ -1,0 +1,193 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.0.639693989)
+
+newmtl red
+Kd 0.80000007 0.018396435 0.023921192
+Ka 0 0 0
+Ks 0.80000007 0.018396435 0.023921192
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 72.25
+illum 2
+
+newmtl white
+Kd 1 1 1
+Ka 0 0 0
+Ks 1 1 1
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 72.25
+illum 2
+
+newmtl yellow
+Kd 0.80000007 0.65240455 0.010238098
+Ka 0 0 0
+Ks 0.80000007 0.65240455 0.010238098
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 72.25
+illum 2
+
+newmtl blue
+Kd 0.013141818 0.10931387 0.80000007
+Ka 0 0 0
+Ks 0.013141818 0.10931387 0.80000007
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 72.25
+illum 2
+
+newmtl black_soccer
+Kd 0 0 0
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 72.25
+illum 2
+
+newmtl white_soccer
+Kd 1 1 1
+Ka 0 0 0
+Ks 1 1 1
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 72.25
+illum 2
+
+newmtl orange_basket
+Kd 0.80000007 0.080285214 0.0015064623
+Ka 0 0 0
+Ks 0.80000007 0.080285214 0.0015064623
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 14.0625
+illum 2
+
+newmtl black_basket
+Kd 0.013410561 0.013410561 0.013410561
+Ka 0 0 0
+Ks 0.013410561 0.013410561 0.013410561
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 14.822499
+illum 2
+
+newmtl green_tennis
+Kd 0.32782167 0.99998611 0.069436304
+Ka 0 0 0
+Ks 0.32782167 0.99998611 0.069436304
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 1.7777776
+illum 2
+
+newmtl white_tennis
+Kd 0.80000001 0.80000001 0.80000001
+Ka 0 0 0
+Ks 0.80000001 0.80000001 0.80000001
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 25
+illum 2
+
+newmtl baseball_red
+Kd 0.80000007 0 0
+Ka 0 0 0
+Ks 0.80000007 0 0
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 3.0625005
+illum 2
+
+newmtl white_baseball
+Kd 0.80000007 0.67123455 0.44875991
+Ka 0 0 0
+Ks 0.80000007 0.67123455 0.44875991
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 25
+illum 2
+
+newmtl bowling
+Kd 0 0.80000007 0.42758268
+Ka 0 0 0
+Ks 0 0.80000007 0.42758268
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 87.111115
+illum 2
+
+newmtl holes
+Kd 0 0 0
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 15.340277
+illum 2
+
+newmtl football.001
+Kd 0.076567955 0.0085489536 0
+Ka 0 0 0
+Ks 0.076567955 0.0085489536 0
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 1.3611113
+illum 2
+
+newmtl football_white.001
+Kd 0.80000001 0.80000001 0.80000001
+Ka 0 0 0
+Ks 0.80000001 0.80000001 0.80000001
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 6.6736107
+illum 2
+
+newmtl volley_yellow
+Kd 0.80000007 0.53718317 0.029412683
+Ka 0 0 0
+Ks 0.80000007 0.53718317 0.029412683
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 56.25
+illum 2
+
+newmtl volley_blue
+Kd 0.0011632154 0.025176937 0.80000007
+Ka 0 0 0
+Ks 0.0011632154 0.025176937 0.80000007
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 56.25
+illum 2
+
+newmtl volley_white
+Kd 0.80000001 0.80000001 0.80000001
+Ka 0 0 0
+Ks 0.80000001 0.80000001 0.80000001
+Ke 0 0 0
+Tf 0 0 0
+d 1
+Ns 56.25
+illum 2
+
