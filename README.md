@@ -161,7 +161,7 @@ if (lightSwitch) {
 ```
 
 ## Funcionalidad secreta
-La *hidden feature*, *easter egg* o funcionalidad secreta de la aplicación, si no la has averiguado ya, consiste en, si se pulsa la tecla numérica correspondiente con el número de las figuras u objetos que se muestran en la escena, se activará una ventana o perspectiva nueva, en la que se puede apreciar y probar el efecto único de luces y sombras que tiene cada uno de ellos.
+La *hidden feature*, *easter egg* o funcionalidad secreta de la aplicación, si no la has averiguado ya, consiste en, si se pulsa la tecla numérica correspondiente con el número de las figuras u objetos que se muestran en la escena, se activará una ventana o perspectiva nueva en la que se puede apreciar y probar el efecto único de luces y sombras que tiene cada uno de ellos.
 
 ## Descarga y prueba
 Para poder probar correctamente el código, descargar los ficheros (el .zip del repositorio) y en la carpeta llamada IluminatedScene se encuentran los archivos de la aplicación listos para probar y ejecutar. El archivo "README.md" y aquellos fuera de la carpeta del proyecto (IluminatedScene), son opcionales, si se descargan no deberían influir en el funcionamiento del código ya que, son usados para darle formato a la presentación y explicación del repositorio en la plataforma GitHub.
