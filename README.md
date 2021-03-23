@@ -24,7 +24,7 @@ Con el objetivo de alcanzar un cierto nivel de interacción con el usuario, la a
 
 ## Explicación
 ### Clase IluminatedScene
-Esta es la clase principal de la aplicación, la cual gestiona la información mostrada por pantalla al usuario (interfaz gráfica), esto es, el desarrollo de los métodos setup() y draw().
+Esta es la clase principal de la aplicación, la cual gestiona la información mostrada por pantalla al usuario (interfaz gráfica), esto es, el desarrollo de los métodos *setup()* y *draw()*.
 ```java
 void setup() {
   size(1200, 800, P3D);
@@ -61,6 +61,107 @@ void draw() {
   }
 }
 ```
+Como se puede ver, en la función *draw()*, controlamos, según los valores de variables booleanas que se manejan según la interacción del usuario con la aplicación, qué se muestra por pantalla y con qué perspectiva. Esto es, mostrar los objetos por pantalla y aplicarles los efectos desarrollados en los métodos relativos a la clase de cada uno de ellos, *display()* y *effect()*.
+
+Por otra parte, esta misma clase es la que maneja la interacción entre el usuario y la interfaz mediante la implementación de los métodos *keyPressed()*, *keyReleased()*, *mousePressed()*, entre otros. Un ejemplo se muestra a continuación:
+```java
+void keyPressed() {
+  if (keyCode == ENTER) menu = false;
+  if (showEffect == false) {
+    if (key == 'R' || key == 'r') initCameraValues();
+    if (key == 'L' || key == 'l') lightSwitch = !lightSwitch;
+  }
+  if ((key == '1') && boxEffect == false && beachBallEffect == false) {
+    ballEffect = !ballEffect;
+    showEffect = !showEffect;
+  }
+  if ((key == '2') && ballEffect == false && boxEffect == false) {
+    beachBallEffect = !beachBallEffect;
+    showEffect = !showEffect;
+  }
+  if ((key == '3') && ballEffect == false && beachBallEffect == false) {
+    boxEffect = !boxEffect;
+    showEffect = !showEffect;
+  }
+  
+  keyStatus = true;
+  if (key == 'W' || key == 'w') up = keyStatus;
+  if (key == 'S' || key == 's') down = keyStatus;
+  if (key == 'A' || key == 'a') left = keyStatus;
+  if (key == 'D' || key == 'd') right = keyStatus;
+  if (key == 'Q' || key == 'q') forward = keyStatus;
+  if (key == 'E' || key == 'e') backward = keyStatus;
+}
+
+void keyReleased() {
+  keyStatus = false;
+  if (key == 'W' || key == 'w') up = keyStatus;
+  if (key == 'S' || key == 's') down = keyStatus;
+  if (key == 'A' || key == 'a') left = keyStatus;
+  if (key == 'D' || key == 'd') right = keyStatus;
+  if (key == 'Q' || key == 'q') forward = keyStatus;
+  if (key == 'E' || key == 'e') backward = keyStatus;
+}
+```
+
+### Clase Ball
+La estructura de la clase *Ball*, *BeachBall* y *Box* es similar. Todas tienen su constructor, método *display()* y *effect()*, siendo estos dos úlitmos propios de cada clase/objeto, consiguiendo así un efecto único para cada uno de ellos.
+```java
+void display(){
+  if (lightSwitch) {
+    pointLight(255, 0, 0, mouseX, mouseY, 00);
+    pointLight(0, 0, 255, width - mouseX, height - mouseY, 00);
+  } else {
+    pointLight(255, 255, 255, x, y+500, z);
+  }
+  pushMatrix();
+  translate(this.x, this.y, this.z);
+  textSize(75);
+  text("1", 0, 500);
+  rotateX(radians(ang));
+  rotateY(radians(ang));
+  noStroke();
+  sphere(width*0.25);
+  popMatrix();
+
+  ang=ang+0.50;
+  if (ang>360) ang=0;
+}
+  
+void effect() {
+  background(0);
+  camera();
+  pointLight(255, 0, 0, mouseX, mouseY, 64);
+  pointLight(0, 0, 255, width - mouseX, height - mouseY, 64);
+  noStroke();
+  pushMatrix();
+  translate(width * 0.5, height * 0.5, -width * 0.25);
+  textAlign(LEFT);
+  textSize(35);
+  text("> This is how the original effect looks like.", -(width/2)-225, -(height/2)-80);
+  text("> Use the mouse to change the direction of the lights.", -(width/2)-225, -(height/2));
+  text("> Press 1 to return.", -(width/2)-225, -(height/2)+80);
+  rotateX(radians(ang));
+  rotateY(radians(ang));
+  sphere(width * 0.25);
+  popMatrix();
+
+  ang=ang+0.50;
+  if (ang>360) ang=0;
+}
+```
+En esta clase, se implementa un efecto lumínico para la vista general de la escena donde, todos los objetos se ven afectados por dos focos de luz, uno azul y otro rojo, ambos, mueven su punto de mira según el movimiento del ratón. De esta manera, podemos ver como los tres objetos de la escena reciben un foco de luz en diferentes direcciones: la esfera desde abajo, la pelota desde su derecha y el cubo desde su izquierda. Además, si el usuario no ha activado las luces en la escena, los objetos reciben un único foco de luz blanca, en lugar de los dos del caso anterior. La implementación de este efecto es la siguiente:
+```java
+if (lightSwitch) {
+  pointLight(255, 0, 0, mouseX, mouseY, 00);
+  pointLight(0, 0, 255, width - mouseX, height - mouseY, 00);
+} else {
+  pointLight(255, 255, 255, x, y+500, z);
+}
+```
+
+## Funcionalidad secreta
+La *hidden feature*, *easter egg* o funcionalidad secreta de la aplicación, si no la has averiguado ya, consiste en, si se pulsa la tecla numérica correspondiente con el número de las figuras u objetos que se muestran en la escena, se activará una ventana o perspectiva nueva, en la que se puede apreciar y probar el efecto único de luces y sombras que tiene cada uno de ellos.
 
 ## Descarga y prueba
 Para poder probar correctamente el código, descargar los ficheros (el .zip del repositorio) y en la carpeta llamada IluminatedScene se encuentran los archivos de la aplicación listos para probar y ejecutar. El archivo "README.md" y aquellos fuera de la carpeta del proyecto (IluminatedScene), son opcionales, si se descargan no deberían influir en el funcionamiento del código ya que, son usados para darle formato a la presentación y explicación del repositorio en la plataforma GitHub.
