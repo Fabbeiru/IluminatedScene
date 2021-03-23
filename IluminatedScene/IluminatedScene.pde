@@ -6,7 +6,7 @@ Box box;
 BeachBall beachBall;
 boolean lightSwitch, menu, showEffect, ballEffect, beachBallEffect, boxEffect;
 boolean keyStatus, up, down, left, right, forward, backward;
-float viewX, viewY, viewZ, speedView, ang;
+float viewX, viewY, viewZ, speedView;
 
 void setup() {
   size(1200, 800, P3D);
@@ -21,7 +21,6 @@ void setup() {
   ballEffect = false;
   boxEffect = false;
   beachBallEffect = false;
-  ang = 0;
 }
 
 void draw() {
