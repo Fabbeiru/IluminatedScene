@@ -2,7 +2,7 @@
 Iluminated scene using processing.
 
 ## Introducción
-El objetivo de esta práctica de la asignatura de 4to, Creación de Interfaces de Usuario (CIU), es empezar a tratar los conceptos, las primitivas básicas 3D para el dibujo de objetos y el uso de diferentes efectos de luz. Para ello, se ha pedido el desarrollo de una aplicación que componga una escena a elección propia con objetos tridimensionales que incluya texturas, luces y cámaras y cualquier extra deseado. Todo ello, usando el lenguaje de programación y el IDE llamado Processing. Este permite desarrollar código en diferentes lenguajes y/o modos, como puede ser processing (basado en Java), p5.js (librería de JavaScript), Python, entre otros.
+El objetivo de esta práctica de la asignatura de 4to, Creación de Interfaces de Usuario (CIU), es seguir con los conceptos y las primitivas básicas 3D para el dibujo de objetos y aplicarles diferentes efectos de luz. Para ello, se ha pedido el desarrollo de una aplicación que componga una escena a elección propia con objetos tridimensionales que incluya texturas, luces y cámaras y cualquier extra deseado. Todo ello, usando el lenguaje de programación y el IDE llamado Processing. Este permite desarrollar código en diferentes lenguajes y/o modos, como puede ser processing (basado en Java), p5.js (librería de JavaScript), Python, entre otros.
 <p align="center"><img src="/iluminatedSceneGif.gif" alt="Iluminated scene using processing"></img></p>
 
 ## Controles
