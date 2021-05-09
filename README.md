@@ -166,7 +166,7 @@ La *hidden feature*, *easter egg* o funcionalidad secreta de la aplicación, si 
 Para poder probar correctamente el código, descargar los ficheros (el .zip del repositorio) y en la carpeta llamada IluminatedScene se encuentran los archivos de la aplicación listos para probar y ejecutar. El archivo "README.md" y aquellos fuera de la carpeta del proyecto (IluminatedScene), son opcionales, si se descargan no deberían influir en el funcionamiento del código ya que, son usados para darle formato a la presentación y explicación del repositorio en la plataforma GitHub.
 
 ## Recursos empleados
-Para la realización de este sistema planetario en 3D, se han consultado y/o utilizado los siguientes recursos:
+Para la realización de este proyecto, se han consultado y/o utilizado los siguientes recursos:
 * Guión de prácticas de la asignatura CIU
 * <a href="https://processing.org">Página de oficial de Processing y sus referencias y ayudas</a>
 * Processing IDE
